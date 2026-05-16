@@ -1,0 +1,129 @@
+.team__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 72px;
+  align-items: center;
+}
+
+/* Story */
+.team__title {
+  font-family: var(--font-display);
+  font-size: clamp(2.3rem, 4.5vw, 3.7rem);
+  font-weight: 600;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.team__title em {
+  color: var(--color-accent);
+  font-style: italic;
+}
+
+.team__text {
+  font-size: .98rem;
+  color: var(--color-text-muted);
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+.team__quote {
+  font-family: var(--font-display);
+  font-size: 1.06rem;
+  font-style: italic;
+  color: var(--color-primary);
+  border-left: 3px solid var(--color-accent);
+  padding: 14px 22px;
+  margin: 18px 0 28px;
+  background: var(--color-cream2);
+  border-radius: 0 8px 8px 0;
+  line-height: 1.6;
+}
+
+.team__socials {
+  display: flex;
+  gap: 10px;
+}
+
+.team__soc-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1.5px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.05rem;
+  color: var(--color-primary);
+  transition: var(--transition);
+}
+
+.team__soc-btn:hover {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* Foto */
+.team__photo-area {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.team__photo {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  aspect-ratio: 4 / 5;
+  position: relative;
+}
+
+.team__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  transition: transform .8s ease;
+}
+
+.team__photo:hover img { transform: scale(1.04); }
+
+.team__photo-badge {
+  position: absolute;
+  bottom: 22px;
+  right: 22px;
+  background: rgba(255,255,255,.95);
+  backdrop-filter: blur(10px);
+  border-radius: var(--radius);
+  padding: 13px 17px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  box-shadow: var(--shadow-md);
+  font-family: var(--font-ui);
+  font-size: .72rem;
+  font-weight: 500;
+}
+
+.team__badge-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  flex-shrink: 0;
+}
+
+/* Responsive */
+@media (max-width: 960px) {
+  .team__grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .team__photo-area { order: -1; }
+
+  .team__photo {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}

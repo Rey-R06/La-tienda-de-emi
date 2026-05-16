@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Jost:wght@300;400;500&display=swap');
+
+:root {
+  /* Colores */
+  --color-primary:       #0a0a0a;
+  --color-cream:         #faf7f2;
+  --color-cream2:        #f5f2ed;
+  --color-white:         #ffffff;
+  --color-accent:        #c9a96e;
+  --color-accent-dark:   #a8854a;
+  --color-accent-light:  #e8d5b0;
+  --color-text-muted:    #7a7a7a;
+  --color-border:        #e8e0d5;
+
+  /* Tipografía */
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-ui:      'Jost', sans-serif;
+
+  /* Sombras */
+  --shadow-soft:   0 4px 24px rgba(0,0,0,.06);
+  --shadow-md:     0 8px 32px rgba(0,0,0,.12);
+  --shadow-lg:     0 16px 48px rgba(0,0,0,.18);
+
+  /* Radios */
+  --radius:      12px;
+  --radius-lg:   20px;
+  --radius-full: 9999px;
+
+  /* Misc */
+  --nav-h:    72px;
+  --transition: all 0.3s ease;
+}
